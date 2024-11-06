@@ -9,6 +9,7 @@ module.exports = {
 	
 	"myDomain": process.env.MY_DOMAIN,
 	"urlFeedlandApp": process.env.URL_FEEDLAND_APP,
+	"urlServerForClient": process.env.URL_FEEDLAND_APP,
 	
 	"smtpHost": process.env.SMTP_HOST,
 	"smtpPort": process.env.SMTP_PORT,
