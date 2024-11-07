@@ -34,7 +34,11 @@ module.exports = {
 		"flLogQueries": false,
 		"flQueueAllRequests": false,
 		"flUseMySql2": true
-		},
+	},
+	
+	"flUseS3ForStorage": process.env.FL_USE_S3_FOR_STORAGE,
+	"s3PathForStorage": process.env.S3_PATH_FOR_STORAGE,
+
 	
 	"flUseTwitterIdentity": false,
 	"flEnableNewUsers": true,
@@ -43,6 +47,8 @@ module.exports = {
 	"flNewsProducts": false,
 	"flUserFeeds": false,
 	"flLikesFeeds": false,
+	
+
 	
 	"urlForFeeds": "http://data.mydomain.com/feeds/",
 	"s3PathForFeeds": "/data.mydomain.com/feeds/",
