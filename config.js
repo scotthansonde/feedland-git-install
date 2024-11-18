@@ -2,15 +2,16 @@ module.exports = {
 	"whatIsThis": "A simple example config.json file for a FeedLand installation, with none of the extra features turned on.",
 	
 	"port": 1452,
-	
-	"flWebsocketEnabled": false,
-	// "websocketPort": 1462,
-	// "urlWebsocketServerForClient": "ws:/localhost:1462/",
-	
+
 	"myDomain": process.env.MY_DOMAIN,
 	"urlFeedlandApp": process.env.URL_FEEDLAND_APP,
 	"urlServerForClient": process.env.URL_FEEDLAND_APP,
 	
+	
+	"flWebsocketEnabled": process.env.FL_WEBSOCKET_ENABLED,
+	"websocketPort": process.env.WEBSOCKET_PORT,
+	"urlWebsocketServerForClient": process.env.URL_WEBSOCKET_SERVER_FOR_CLIENT,
+
 	"smtpHost": process.env.SMTP_HOST,
 	"smtpPort": process.env.SMTP_PORT,
 	"smtpUsername": process.env.SMTP_USERNAME,
