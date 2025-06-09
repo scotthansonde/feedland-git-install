@@ -1,13 +1,13 @@
 module.exports = {
 	"whatIsThis": "A simple example config.json file for a FeedLand installation, with none of the extra features turned on.",
-	
+
 	"port": 1452,
 
 	"myDomain": process.env.MY_DOMAIN,
 	"urlFeedlandApp": process.env.URL_FEEDLAND_APP,
 	"urlServerForClient": process.env.URL_FEEDLAND_APP,
-	
-	
+
+
 	"flWebsocketEnabled": process.env.FL_WEBSOCKET_ENABLED,
 	"websocketPort": process.env.WEBSOCKET_PORT,
 	"urlWebsocketServerForClient": process.env.URL_WEBSOCKET_SERVER_FOR_CLIENT,
@@ -16,13 +16,13 @@ module.exports = {
 	"smtpPort": process.env.SMTP_PORT,
 	"smtpUsername": process.env.SMTP_USERNAME,
 	"smtpPassword": process.env.SMTP_PASSWORD,
-	
+
 	"mailSender": process.env.MAIL_SENDER,
 	"confirmEmailSubject": "FeedLand confirmation",
 	"confirmationExpiresAfter": 86400,
 	"urlServerForEmail": process.env.URL_FEEDLAND_APP,
 	"flUseDatabaseForConfirmations": true,
-	
+
 	"database": {
 		"host": process.env.DATABASE_HOST,
 		"port": process.env.DATABASE_PORT,
@@ -36,37 +36,44 @@ module.exports = {
 		"flQueueAllRequests": false,
 		"flUseMySql2": true
 	},
-	
+
 	"flUseS3ForStorage": process.env.FL_USE_S3_FOR_STORAGE,
 	"s3PathForStorage": process.env.S3_PATH_FOR_STORAGE,
 
-	
+
 	"flUseTwitterIdentity": false,
 	"flEnableNewUsers": true,
 	"flBackupOnStartup": false,
-	
+
 	"flNewsProducts": false,
 	"flUserFeeds": false,
 	"flLikesFeeds": false,
-	
 
-	
+
+
 	"urlForFeeds": "http://data.mydomain.com/feeds/",
 	"s3PathForFeeds": "/data.mydomain.com/feeds/",
-	"s3LikesPath": "/data.mydomain.com/likes/", 
+	"s3LikesPath": "/data.mydomain.com/likes/",
 	"urlNewsProducts": "http://newsproducts.mydomain.com",
-	
+
 	"maxRiverItems": 175,
 	"maxNewFeedSubscriptions": 250,
-	
+
 	"flUpdateFeedsInBackground": true,
 	"minSecsBetwFeedChecks": 15,
-	
+
 	"productName": "FeedLand",
 	"productNameForDisplay": "FeedLand",
-	
+
 	"urlServerHomePageSource": "http://scripting.com/code/feedland/home/index.html",
-	
+
 	"flUseRiverCache": true,
-	"ctSecsLifeRiverCache": 300,
+    "ctSecsLifeRiverCache": 300,
+    "legalTags": {
+	    "allowedTags": [
+		    "p", "br", "b", "i", "strong", "em", "h3", "blockquote", "ul", "ol", "li"
+		    ],
+	    "allowedAttributes": {}
+	    }
+
 	}
