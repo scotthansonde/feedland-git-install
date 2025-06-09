@@ -42,19 +42,19 @@ module.exports = {
 
 
 	"flUseTwitterIdentity": false,
-	"flEnableNewUsers": true,
+	"flEnableNewUsers": process.env.FL_ENABLE_NEW_USERS,
 	"flBackupOnStartup": false,
 
 	"flNewsProducts": false,
-	"flUserFeeds": false,
-	"flLikesFeeds": false,
+	"flUserFeeds": process.env.FL_USER_FEEDS,
+	"flLikesFeeds": process.env.FL_LIKES_FEEDS,
 
 
 
-	"urlForFeeds": "http://data.mydomain.com/feeds/",
-	"s3PathForFeeds": "/data.mydomain.com/feeds/",
-	"s3LikesPath": "/data.mydomain.com/likes/",
-	"urlNewsProducts": "http://newsproducts.mydomain.com",
+	"urlForFeeds": process.env.URL_FOR_FEEDS,
+	"s3PathForFeeds": process.env.S3_PATH_FOR_FEEDS,
+	"s3LikesPath": process.env.S3_LIKES_PATH,
+	"urlNewsProducts": process.env.URL_NEWS_PRODUCTS,
 
 	"maxRiverItems": 175,
 	"maxNewFeedSubscriptions": 250,
