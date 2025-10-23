@@ -31,7 +31,6 @@ module.exports = {
 		"database": process.env.DATABASE_DATABASE,
 		"charset": "utf8mb4",
 		"connectionLimit": 100,
-		"ssl": {"rejectUnauthorized": true},
 		"debug": false,
 		"flLogQueries": false,
 		"flQueueAllRequests": false,
